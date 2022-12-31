@@ -14,7 +14,7 @@ const Callback: NextPage = () => {
     const code = router.query.code;
 
     if (code == null || Array.isArray(code)) {
-      alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용!");
+      alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용! 2");
       setTimeout(() => {
         window.history.back();
       }, 3000);

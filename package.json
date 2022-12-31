@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
-    "@divops/gist-storage": "^0.0.7",
-    "@divops/github-oauth": "^0.0.42",
-    "@divops/github-oauth-sdk": "^0.0.1",
+    "@divops/gist-storage": "^0.0.8",
+    "@divops/github-oauth": "^0.0.59",
+    "@divops/github-oauth-sdk": "^0.0.6",
     "@emotion/react": "^11.10.4",
     "next": "12.3.1",
     "nextjs-cors": "^2.1.2",

@@ -16,7 +16,7 @@ const TestLogin: NextPage = () => {
     const referrer = router.query.referrer;
 
     if (referrer == null || Array.isArray(referrer)) {
-      alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용!");
+      alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용! 3");
       setTimeout(() => {
         window.history.back();
       }, 3000);

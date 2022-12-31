@@ -21,7 +21,7 @@ const Callback: NextPage = () => {
       return;
     }
 
-    onCompleteGitHubOAuth({ url: "/login/api/user-token", code });
+    onCompleteGitHubOAuth({ url: "/github-api/api/user-token", code });
   }, [router]);
 
   return <></>;

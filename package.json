@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
+    "@divops/gist-storage": "^0.0.7",
     "@divops/github-oauth": "^0.0.42",
     "@divops/github-oauth-sdk": "^0.0.1",
     "@emotion/react": "^11.10.4",

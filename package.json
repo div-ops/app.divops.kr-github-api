@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
+    "@divops/github-oauth": "^0.0.41",
+    "@divops/github-oauth-sdk": "^0.0.1",
     "@emotion/react": "^11.10.4",
     "next": "12.3.1",
+    "nextjs-cors": "^2.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

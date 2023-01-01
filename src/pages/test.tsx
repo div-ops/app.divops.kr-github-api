@@ -23,19 +23,9 @@ const Test: NextPage = () => {
 
     setLoading(true);
 
-    (async () => {
-      try {
-        await setCookieToken(code);
-        const { data } = (await fetchUserInfo()) ?? {};
-        if (data == null) {
-          return;
-        }
+    localStorage.setItem("Authorization", code);
 
-        setUser(data.login);
-      } finally {
-        resetQueryParam("code");
-      }
-    })();
+    resetQueryParam("code");
   }, [router]);
 
   useEffect(() => {
@@ -90,27 +80,33 @@ const Test: NextPage = () => {
 
 export default Test;
 
+function createAuthHeaders() {
+  const Authorization = localStorage.getItem("Authorization");
+  if (Authorization != null) {
+    return { Authorization } as const;
+  } else {
+    return {} as any;
+  }
+}
+
 async function requestLogout() {
   await fetch(`/github-api/api/logout`, {
     method: "GET",
+    headers: {
+      ...createAuthHeaders(),
+    },
   });
 }
 
 async function fetchUserInfo() {
   const response = await fetch(`/github-api/api/user/info`, {
     method: "GET",
+    headers: {
+      ...createAuthHeaders(),
+    },
   });
 
   return await response.json();
-}
-
-async function setCookieToken(code: string) {
-  await fetch(`/github-api/api/set-cookie`, {
-    method: "POST",
-    headers: {
-      Authorization: code,
-    },
-  });
 }
 
 function requestLogin() {

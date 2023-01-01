@@ -12,7 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.19.1",
     "@divops/gist-storage": "^0.0.9",
-    "@divops/github-oauth": "^0.0.63",
+    "@divops/github-oauth": "^0.0.64",
     "@divops/github-oauth-sdk": "^0.0.6",
     "@emotion/react": "^11.10.4",
     "next": "12.3.1",

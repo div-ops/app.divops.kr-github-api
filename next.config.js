@@ -25,6 +25,8 @@ module.exports = (phase, { defaultConfig }) => {
 
   console.log("TEST 모드입니다.");
 
+  delete nextConfig.basePath;
+
   nextConfig.trailingSlash = true;
 
   nextConfig.rewrites = () => {

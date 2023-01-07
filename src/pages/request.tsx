@@ -3,7 +3,10 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { requestGitHubOAuth } from "@divops/github-oauth-sdk";
 
-const CLIENT_ID = "0a82fd2fc4d4d7e7162d";
+const CLIENT_ID =
+  process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID ?? "0a82fd2fc4d4d7e7162d";
+
+console.log({ CLIENT_ID });
 
 const TestLogin: NextPage = () => {
   const router = useRouter();

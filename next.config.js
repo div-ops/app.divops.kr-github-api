@@ -19,5 +19,30 @@ module.exports = (phase, { defaultConfig }) => {
     },
   };
 
+  if (process.env.MODE == null || process.env.MODE === "") {
+    return nextConfig;
+  }
+
+  console.log("TEST 모드입니다.");
+
+  nextConfig.trailingSlash = true;
+
+  nextConfig.rewrites = () => {
+    return [
+      {
+        source: "/memory-map/",
+        destination: "https://www.creco.services/memory-map/",
+      },
+      {
+        source: "/memory-map/:slug*",
+        destination: "https://www.creco.services/memory-map/:slug*",
+      },
+      {
+        source: "/github-api/:slug*",
+        destination: "/:slug*",
+      },
+    ];
+  };
+
   return nextConfig;
 };

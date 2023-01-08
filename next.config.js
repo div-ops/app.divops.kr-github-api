@@ -30,14 +30,16 @@ module.exports = (phase, { defaultConfig }) => {
   nextConfig.trailingSlash = true;
 
   nextConfig.rewrites = () => {
+    const TEST_BASE_URL =
+      process.env.TEST_BASE_URL ?? "https://www.creco.services";
     return [
       {
         source: "/memory-map/",
-        destination: "https://www.creco.services/memory-map/",
+        destination: `${TEST_BASE_URL}/memory-map/`,
       },
       {
         source: "/memory-map/:slug*",
-        destination: "https://www.creco.services/memory-map/:slug*",
+        destination: `${TEST_BASE_URL}/memory-map/:slug*`,
       },
       {
         source: "/github-api/:slug*",

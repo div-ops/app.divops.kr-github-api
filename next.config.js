@@ -50,8 +50,18 @@ module.exports = (phase, { defaultConfig }) => {
 
   // fs 모듈 in browser 문제 해결
   nextConfig.webpack5 = true;
-  nextConfig.webpack = (config) => {
-    config.resolve.fallback = { fs: false };
+  nextConfig.webpack = (config, { isServer } = {}) => {
+    // Fixes npm packages that depend on `fs` module
+    if (!isServer) {
+      config.node = {
+        fs: "empty",
+      };
+    }
+
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+    };
 
     return config;
   };

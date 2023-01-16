@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useRequestGitHubOAuth } from "@divops/github-oauth-sdk";
+import { GitHubOAuthApp } from "@divops/github-oauth";
 
 const CLIENT_ID = process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID;
 
@@ -8,7 +8,7 @@ if (!CLIENT_ID) {
 }
 
 const RequestPage: NextPage = () => {
-  useRequestGitHubOAuth({ CLIENT_ID });
+  GitHubOAuthApp.useRequestGitHubOAuth({ CLIENT_ID });
 
   return <>loading</>;
 };

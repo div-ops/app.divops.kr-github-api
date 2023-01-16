@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { useCallbackGitHubOAuth } from "@divops/github-oauth-sdk";
+import { GitHubOAuthApp } from "@divops/github-oauth";
 
 const Callback: NextPage = () => {
-  useCallbackGitHubOAuth({ url: "/github-api/api/user-token" });
+  GitHubOAuthApp.useCallbackGitHubOAuth({ url: "/github-api/api/user-token" });
 
   return <>loading</>;
 };

@@ -1,6 +1,6 @@
-import { API } from "@divops/github-oauth";
+import { GitHubOAuthServer } from "@divops/github-oauth";
 import { createCors } from "../../../../api/index";
 
-export default API.of({ name: "app-divops-kr" }).ReadResource({
+export default GitHubOAuthServer.of({ name: "app-divops-kr" }).ReadResource({
   before: createCors,
 });

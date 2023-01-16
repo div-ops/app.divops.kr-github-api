@@ -48,5 +48,13 @@ module.exports = (phase, { defaultConfig }) => {
     ];
   };
 
+  // fs 모듈 in browser 문제 해결
+  nextConfig.webpack5 = true;
+  nextConfig.webpack = (config) => {
+    config.resolve.fallback = { fs: false };
+
+    return config;
+  };
+
   return nextConfig;
 };

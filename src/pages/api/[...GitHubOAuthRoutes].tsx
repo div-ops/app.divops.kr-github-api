@@ -5,5 +5,6 @@ export default GitHubOAuthRoutes({
   prefix: "/api",
   allowedOrigins: {
     "https://www.creco.services": ["memory"],
+    "https://div.homes": ["todo"],
   },
 });

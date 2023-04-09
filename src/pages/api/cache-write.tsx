@@ -1,13 +1,17 @@
 import fs from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const cachePrefix = "/tmp/cache";
+const cachePrefix = "/tmp/cache/";
+
+if (!fs.existsSync(cachePrefix)) {
+  fs.mkdirSync(cachePrefix);
+}
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.query.key && req.query.data) {
     res.status(200).json({
       data: fs.writeFileSync(
-        `${cachePrefix}/${req.query.key}.json`,
+        `${cachePrefix}${req.query.key}.json`,
         req.query.data as string,
         "utf8"
       ),

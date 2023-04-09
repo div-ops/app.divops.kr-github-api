@@ -5,7 +5,7 @@ type Cache = {
   [key: string]: any;
 };
 
-const cacheFilePath = __dirname + "/../cache.json";
+const cacheFilePath = "/tmp/cache.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (!fs.existsSync(cacheFilePath)) {

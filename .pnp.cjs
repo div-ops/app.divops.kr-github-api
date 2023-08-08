@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.3"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
             ["@divops-packages/node-utils", "npm:0.1.1"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
@@ -359,10 +359,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops-packages/gist-crud-core", [\
-        ["npm:0.3.3", {\
-          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.3-d926c0f114-f08d5f83cb.zip/node_modules/@divops-packages/gist-crud-core/",\
+        ["npm:0.3.4", {\
+          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.4-e472dd1969-6e6cc47e95.zip/node_modules/@divops-packages/gist-crud-core/",\
           "packageDependencies": [\
-            ["@divops-packages/gist-crud-core", "npm:0.3.3"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
             ["@octokit/rest", "npm:18.12.0"]\
           ],\
           "linkType": "HARD"\
@@ -383,7 +383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@divops/app.divops.kr-github-api", "workspace:."],\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.3"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
             ["@divops-packages/node-utils", "npm:0.1.1"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\

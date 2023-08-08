@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/core", "npm:7.22.10"],\
             ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
-            ["@divops-packages/node-utils", "npm:0.1.1"],\
+            ["@divops-packages/node-utils", "npm:0.1.2"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
             ["@divops/github-oauth", "virtual:7b3466c5b3b7c9387656c5bb38e1ccb5925cd88c9fbfa626bc2c6abbe7416faf3a55c908f947636c62f9a930a54bad59fb8b8b8c9bbaae4556593fac547db92b#npm:0.0.112"],\
@@ -369,10 +369,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops-packages/node-utils", [\
-        ["npm:0.1.1", {\
-          "packageLocation": "./.yarn/cache/@divops-packages-node-utils-npm-0.1.1-cfe1b0e0a5-f9fef4eaab.zip/node_modules/@divops-packages/node-utils/",\
+        ["npm:0.1.2", {\
+          "packageLocation": "./.yarn/cache/@divops-packages-node-utils-npm-0.1.2-0f53ff04f7-9d4ba4ff0f.zip/node_modules/@divops-packages/node-utils/",\
           "packageDependencies": [\
-            ["@divops-packages/node-utils", "npm:0.1.1"]\
+            ["@divops-packages/node-utils", "npm:0.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -384,7 +384,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@divops/app.divops.kr-github-api", "workspace:."],\
             ["@babel/core", "npm:7.22.10"],\
             ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
-            ["@divops-packages/node-utils", "npm:0.1.1"],\
+            ["@divops-packages/node-utils", "npm:0.1.2"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
             ["@divops/github-oauth", "virtual:7b3466c5b3b7c9387656c5bb38e1ccb5925cd88c9fbfa626bc2c6abbe7416faf3a55c908f947636c62f9a930a54bad59fb8b8b8c9bbaae4556593fac547db92b#npm:0.0.112"],\

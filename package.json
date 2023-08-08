@@ -12,7 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.19.1",
     "@divops-packages/gist-crud-core": "^0.3.4",
-    "@divops-packages/node-utils": "^0.1.1",
+    "@divops-packages/node-utils": "^0.1.2",
     "@divops/gist-storage": "^0.0.20",
     "@divops/github-oauth": "^0.0.112",
     "@emotion/react": "^11.10.4",

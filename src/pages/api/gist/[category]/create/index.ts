@@ -3,7 +3,7 @@ import { BOX_CATEGORY } from '../../constants';
 import { client } from '../../client';
 
 export default async function(req: NextApiRequest, res: NextApiResponse) {
-  const [,,,category] = (new URL(req.url!)).pathname.split('/');
+  const [,,,category] = req.url!.split('/');
   const { contents } = await req.body;
 
   if (typeof category !== 'string' || !(category in BOX_CATEGORY)) {

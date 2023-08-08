@@ -3,7 +3,7 @@ import { BOX_CATEGORY } from '../../constants';
 import { client } from '../../client';
 
 export default async function(req: NextApiRequest, res: NextApiResponse) {
-  const [,,category, id] = (new URL(req.url!)).pathname.split('/');
+  const [,,category,id] = req.url!.split('/');
 
   if (typeof category !== 'string' || !(category in BOX_CATEGORY)) {
     return res.status(400).json({ error: `There is no category of ${category}` });

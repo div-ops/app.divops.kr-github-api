@@ -11,6 +11,12 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
     'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
   );
 
+  // specific logic for the preflight request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end()
+    return
+  };
+
   const [,,,category] = req.url!.split('/');
 
   if (typeof category !== 'string' || !(category in BOX_CATEGORY)) {

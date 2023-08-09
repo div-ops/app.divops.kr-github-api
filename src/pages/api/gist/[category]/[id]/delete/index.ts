@@ -19,14 +19,17 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
     return
   };
   const [,,,category,id] = req.url!.split('/');
+  let listId;
 
   if (typeof category !== 'string' || !(category in BOX_CATEGORY)) {
-    return res.status(400).json({ error: `There is no category of ${category}` });
+    listId = category;
+  } else {
+    listId = BOX_CATEGORY[category as keyof typeof BOX_CATEGORY];
   }
 
   try {
     const data = await client.deleteItem({
-      listId: BOX_CATEGORY[category as keyof typeof BOX_CATEGORY],
+      listId,
       itemId: id,
     });
   

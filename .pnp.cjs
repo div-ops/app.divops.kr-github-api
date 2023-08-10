@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
             ["@divops-packages/node-utils", "npm:0.1.2"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
@@ -359,10 +359,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops-packages/gist-crud-core", [\
-        ["npm:0.3.4", {\
-          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.4-e472dd1969-6e6cc47e95.zip/node_modules/@divops-packages/gist-crud-core/",\
+        ["npm:0.3.6", {\
+          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.6-d6902c4f57-f4a524345d.zip/node_modules/@divops-packages/gist-crud-core/",\
           "packageDependencies": [\
-            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
             ["@octokit/rest", "npm:18.12.0"]\
           ],\
           "linkType": "HARD"\
@@ -383,7 +383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@divops/app.divops.kr-github-api", "workspace:."],\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.4"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
             ["@divops-packages/node-utils", "npm:0.1.2"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
@@ -1255,10 +1255,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.2.19", {\
-          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.19-821bb174e8-1ef657b90c.zip/node_modules/@types/react/",\
+        ["npm:18.2.20", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.20-c3e301ef67-30f699c60e.zip/node_modules/@types/react/",\
           "packageDependencies": [\
-            ["@types/react", "npm:18.2.19"],\
+            ["@types/react", "npm:18.2.20"],\
             ["@types/prop-types", "npm:15.7.5"],\
             ["@types/scheduler", "npm:0.16.3"],\
             ["csstype", "npm:3.1.2"]\
@@ -1271,7 +1271,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.0.6-55949dcf84-db571047af.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
             ["@types/react-dom", "npm:18.0.6"],\
-            ["@types/react", "npm:18.2.19"]\
+            ["@types/react", "npm:18.2.20"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1811,7 +1811,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["browserslist", "npm:4.21.10"],\
             ["caniuse-lite", "npm:1.0.30001519"],\
-            ["electron-to-chromium", "npm:1.4.488"],\
+            ["electron-to-chromium", "npm:1.4.490"],\
             ["node-releases", "npm:2.0.13"],\
             ["update-browserslist-db", "virtual:e2170a875bba2f8fa9e93e47c65f2f250097e101a59d95ea6fd852f32965e8cd6cef3b5662aa7295279d5bc60c9a612ddb8515c7dd1b7e8fb9984dee1823e7d6#npm:1.0.11"]\
           ],\
@@ -2105,10 +2105,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["electron-to-chromium", [\
-        ["npm:1.4.488", {\
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.488-9c254135e9-431c100e01.zip/node_modules/electron-to-chromium/",\
+        ["npm:1.4.490", {\
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.490-becab37e4e-c81bf177ff.zip/node_modules/electron-to-chromium/",\
           "packageDependencies": [\
-            ["electron-to-chromium", "npm:1.4.488"]\
+            ["electron-to-chromium", "npm:1.4.490"]\
           ],\
           "linkType": "HARD"\
         }]\

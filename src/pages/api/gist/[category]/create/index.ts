@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { BOX_CATEGORY } from '../../constants';
 import { client } from '../../client';
+import { requireAuth } from "../../health";
 
 export default async function(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader('Access-Control-Allow-Credentials', 'true');
@@ -35,6 +36,8 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
+    requireAuth(req);
+
     const data = await client.createItem({
       listId,
       item,
@@ -42,6 +45,10 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
   
     return res.status(200).json({ data });
   } catch (error: any) {
+    if (error.code != null) {
+      return res.status(error.code).json({ message: error.message });
+    }
+
     if (error.message.includes('찾을 수 없습니다.')) {
       return res.status(404).json({ message: error.message, item });
     }

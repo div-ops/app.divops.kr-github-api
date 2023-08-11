@@ -3,8 +3,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { pbkdf2Sync } from 'crypto';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const [token, id] = req.headers.authorization?.split?.(':') ?? [];
-  console.log(req.cookies);
+  const [token, id] = req.cookies['Authorization']?.split(':') ?? [];
+
   const secretKey = ensureEnv('GIST_STORAGE_TOKEN') + `:${id}`;
     
   // 암호화된 문자열

@@ -24,7 +24,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const cryptedToken = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64url');
 
     res.setHeader('Set-Cookie', `Authorization=${cryptedToken}:${id}; path=/; HttpOnly;`);
-    res.setHeader('X-Set-Cookie-2', `Authorization=${cryptedToken}:${id}; path=/; HttpOnly;`);
     
     res.status(200).json({ message: 'ok' });
   } catch (error:any) {

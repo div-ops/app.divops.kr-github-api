@@ -16,7 +16,7 @@ export function requireAuth(req: NextApiRequest) {
   const secretKey = ensureEnv('GIST_STORAGE_TOKEN') + `:${id}`;
 
   // 암호화된 문자열
-  const cryptedToken = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64');
+  const cryptedToken = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64url');
 
   // 암호화된 문자열이 secret 으로 암호화되었는지 확인
   if (token !== cryptedToken) {

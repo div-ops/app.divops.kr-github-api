@@ -21,11 +21,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const secretKey = ensureEnv('GIST_STORAGE_TOKEN') + `:${id}`;
     
     // 암호화된 문자열
-    const cryptedToken = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64');
-    const cryptedToken2 = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64url');
+    const cryptedToken = pbkdf2Sync(`${id}:${new Date().toISOString().slice(0,7)}`, secretKey, 1000, 64, 'sha512').toString('base64url');
 
     res.setHeader('Set-Cookie', `Authorization=${cryptedToken}:${id}; path=/; HttpOnly;`);
-    res.setHeader('X-Set-Cookie-2', `Authorization=${cryptedToken2}:${id}; path=/; HttpOnly;`);
+    res.setHeader('X-Set-Cookie-2', `Authorization=${cryptedToken}:${id}; path=/; HttpOnly;`);
     
     res.status(200).json({ message: 'ok' });
   } catch (error:any) {

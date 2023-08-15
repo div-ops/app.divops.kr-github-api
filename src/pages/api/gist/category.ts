@@ -22,6 +22,6 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
       }
     }
 
-    return res.status(200).json({ data: BOX_CATEGORY });
+    return res.status(200).json({ data: categories });
   }
 }

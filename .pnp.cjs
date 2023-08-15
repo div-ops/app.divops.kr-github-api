@@ -39,8 +39,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
-            ["@divops-packages/node-utils", "npm:0.1.2"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.7"],\
+            ["@divops-packages/node-utils", "npm:0.1.3"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
             ["@divops/github-oauth", "virtual:7b3466c5b3b7c9387656c5bb38e1ccb5925cd88c9fbfa626bc2c6abbe7416faf3a55c908f947636c62f9a930a54bad59fb8b8b8c9bbaae4556593fac547db92b#npm:0.0.112"],\
@@ -359,20 +359,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops-packages/gist-crud-core", [\
-        ["npm:0.3.6", {\
-          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.6-d6902c4f57-f4a524345d.zip/node_modules/@divops-packages/gist-crud-core/",\
+        ["npm:0.3.7", {\
+          "packageLocation": "./.yarn/cache/@divops-packages-gist-crud-core-npm-0.3.7-f28064c150-10f609b1a5.zip/node_modules/@divops-packages/gist-crud-core/",\
           "packageDependencies": [\
-            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.7"],\
             ["@octokit/rest", "npm:18.12.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@divops-packages/node-utils", [\
-        ["npm:0.1.2", {\
-          "packageLocation": "./.yarn/cache/@divops-packages-node-utils-npm-0.1.2-0f53ff04f7-9d4ba4ff0f.zip/node_modules/@divops-packages/node-utils/",\
+        ["npm:0.1.3", {\
+          "packageLocation": "./.yarn/cache/@divops-packages-node-utils-npm-0.1.3-5409f63679-b5a5b49e0c.zip/node_modules/@divops-packages/node-utils/",\
           "packageDependencies": [\
-            ["@divops-packages/node-utils", "npm:0.1.2"]\
+            ["@divops-packages/node-utils", "npm:0.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -383,8 +383,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@divops/app.divops.kr-github-api", "workspace:."],\
             ["@babel/core", "npm:7.22.10"],\
-            ["@divops-packages/gist-crud-core", "npm:0.3.6"],\
-            ["@divops-packages/node-utils", "npm:0.1.2"],\
+            ["@divops-packages/gist-crud-core", "npm:0.3.7"],\
+            ["@divops-packages/node-utils", "npm:0.1.3"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.20"],\
             ["@divops/github-oauth", "virtual:7b3466c5b3b7c9387656c5bb38e1ccb5925cd88c9fbfa626bc2c6abbe7416faf3a55c908f947636c62f9a930a54bad59fb8b8b8c9bbaae4556593fac547db92b#npm:0.0.112"],\
@@ -1810,8 +1810,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/browserslist-npm-4.21.10-e2170a875b-1e27c0f111.zip/node_modules/browserslist/",\
           "packageDependencies": [\
             ["browserslist", "npm:4.21.10"],\
-            ["caniuse-lite", "npm:1.0.30001519"],\
-            ["electron-to-chromium", "npm:1.4.490"],\
+            ["caniuse-lite", "npm:1.0.30001520"],\
+            ["electron-to-chromium", "npm:1.4.491"],\
             ["node-releases", "npm:2.0.13"],\
             ["update-browserslist-db", "virtual:e2170a875bba2f8fa9e93e47c65f2f250097e101a59d95ea6fd852f32965e8cd6cef3b5662aa7295279d5bc60c9a612ddb8515c7dd1b7e8fb9984dee1823e7d6#npm:1.0.11"]\
           ],\
@@ -1839,10 +1839,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["caniuse-lite", [\
-        ["npm:1.0.30001519", {\
-          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001519-1d6b5bc825-66085133ed.zip/node_modules/caniuse-lite/",\
+        ["npm:1.0.30001520", {\
+          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001520-83db97126d-59991ad8f3.zip/node_modules/caniuse-lite/",\
           "packageDependencies": [\
-            ["caniuse-lite", "npm:1.0.30001519"]\
+            ["caniuse-lite", "npm:1.0.30001520"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2105,10 +2105,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["electron-to-chromium", [\
-        ["npm:1.4.490", {\
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.490-becab37e4e-c81bf177ff.zip/node_modules/electron-to-chromium/",\
+        ["npm:1.4.491", {\
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.491-7541a41cd5-8d96c720c8.zip/node_modules/electron-to-chromium/",\
           "packageDependencies": [\
-            ["electron-to-chromium", "npm:1.4.490"]\
+            ["electron-to-chromium", "npm:1.4.491"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3772,7 +3772,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@types/sass", null],\
-            ["caniuse-lite", "npm:1.0.30001519"],\
+            ["caniuse-lite", "npm:1.0.30001520"],\
             ["fibers", null],\
             ["node-sass", null],\
             ["postcss", "npm:8.4.14"],\

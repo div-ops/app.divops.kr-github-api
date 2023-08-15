@@ -1,7 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { BOX_CATEGORY } from '../../constants';
 import { client } from '../../client';
+import { requireAuth } from "../../health";
 
+const privateCategories = ['work'];
 export default async function(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'OPTIONS') {
     res.status(200).end()
@@ -18,6 +20,10 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
+    if (privateCategories.includes(category)) {
+      requireAuth(req);
+    }
+
     const data = await client.readList({
       listId
     });

@@ -1,11 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { BOX_CATEGORY } from '../../constants';
+import { BOX_CATEGORY, BOX_CATEGORY_PRIVATE } from '../../constants';
 import { client } from '../../client';
 import { requireAuth } from "../../health";
 
-const privateCategories = [
-  'e396a261fcaa122a6544de06f8b74653' // work
-];
 
 export default async function(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'OPTIONS') {
@@ -23,7 +20,7 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
-    if (privateCategories.includes(category)) {
+    if (BOX_CATEGORY_PRIVATE.includes(category)) {
       requireAuth(req);
     }
 

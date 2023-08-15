@@ -3,7 +3,10 @@ import { BOX_CATEGORY } from '../../constants';
 import { client } from '../../client';
 import { requireAuth } from "../../health";
 
-const privateCategories = ['work'];
+const privateCategories = [
+  'e396a261fcaa122a6544de06f8b74653' // work
+];
+
 export default async function(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'OPTIONS') {
     res.status(200).end()

@@ -8,6 +8,7 @@ export const BOX_CATEGORY = {
   ['inner-peace']: '86dbd2007960d682fa897adf03ca52bf',
   ['blog-post']: 'ce62b77189108398c8655c33dbb608ee',
   ['blog-ps']: '7b5dc7c60bdc631814396fab58d799d9',
+  ['blog-doodle']: '8790e7be4dc84a7e88532302c369efd6',
 }
 
 export const BOX_CATEGORY_PRIVATE = [

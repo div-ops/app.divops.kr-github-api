@@ -10,6 +10,8 @@ export const BOX_CATEGORY = {
   ["blog-ps"]: "7b5dc7c60bdc631814396fab58d799d9",
   ["blog-doodle"]: "8790e7be4dc84a7e88532302c369efd6",
   ["config"]: "6b1ffeca3118faa51147f8a19a5c7766",
+  ["ygg-book"]: "2e647a49350f4ed1a6a6b9f3a1cea402",
+  ["ygg-knowhow"]: "66567f1e8d681665202ddd5db5add65d"
 };
 
 export const BOX_CATEGORY_PRIVATE = [
